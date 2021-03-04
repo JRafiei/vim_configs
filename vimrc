@@ -14,9 +14,11 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-" for JS/HTML files
-autocmd Filetype javascript setlocal ts=2 sw=2
-autocmd Filetype html setlocal ts=2 sw=2
+
+" Specific configs based on file type
+autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab autoindent fileformat=unix
+autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2
+autocmd Filetype html setlocal tabstop=2 shiftwidth=2
 
 let NERDTreeWinSize = 30
 nmap <F6> :NERDTreeToggle<CR>
