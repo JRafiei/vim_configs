@@ -1,18 +1,21 @@
 filetype plugin indent on
+colorscheme monokai
 set number
 set ignorecase
 set incsearch
 set showcmd
 set hidden
 
-colorscheme monokai
 
-" show existing tab with 4 spaces width
-set tabstop=4
-" when indenting with '>', use 4 spaces width
-set shiftwidth=4
-" On pressing tab, insert 4 spaces
-set expandtab
+" --------------------------------------------------------------------------------
+" configure editor with tabs and nice stuff...
+" --------------------------------------------------------------------------------
+set expandtab           " enter spaces when tab is pressed
+set textwidth=120       " break lines when line length increases
+set tabstop=4           " use 4 spaces to represent tab
+set softtabstop=4
+set shiftwidth=4        " number of spaces to use for auto indent
+set autoindent          " copy indent from current line when starting a new line
 
 
 " Specific configs based on file type
@@ -20,10 +23,11 @@ autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab autoindent fil
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2
 
-let NERDTreeWinSize = 30
-nmap <F6> :NERDTreeToggle<CR>
-inoremap <c-@> <c-n>
 
 au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+au VimLeavePre * if v:this_session != '' | exec "mks! " . v:this_session | endif
 
+
+let NERDTreeWinSize = 30
+nmap <F6> :NERDTreeToggle<CR>
