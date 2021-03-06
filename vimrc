@@ -31,3 +31,6 @@ au VimLeavePre * if v:this_session != '' | exec "mks! " . v:this_session | endif
 
 let NERDTreeWinSize = 30
 nmap <F6> :NERDTreeToggle<CR>
+
+" allow the . to execute once for each line of a visual selection
+vnoremap . :normal .<CR>
