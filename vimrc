@@ -3,6 +3,7 @@ colorscheme monokai
 set number
 set ignorecase
 set incsearch
+set hlsearch
 set showcmd
 set hidden
 
