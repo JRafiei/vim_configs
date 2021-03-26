@@ -95,7 +95,7 @@ let s:addbg       = { "gui": "#5f875f", "cterm": "22" }
 let s:delfg       = { "gui": "#ff8b8b", "cterm": "210" }
 let s:delbg       = { "gui": "#f75f5f", "cterm": "124" }
 let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }
-let s:changebg    = { "gui": "#5f5f87", "cterm": "234" }
+let s:changebg    = { "gui": "#5f5f87", "cterm": "136" }
 
 let s:cyan        = { "gui": "#A1EFE4" }
 let s:br_green    = { "gui": "#9EC400" }
