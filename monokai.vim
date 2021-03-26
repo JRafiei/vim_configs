@@ -91,11 +91,11 @@ let s:purered     = { "gui": "#ff0000", "cterm": "52" }
 let s:darkred     = { "gui": "#5f0000", "cterm": "52" }
 
 let s:addfg       = { "gui": "#d7ffaf", "cterm": "193" }
-let s:addbg       = { "gui": "#5f875f", "cterm": "65" }
+let s:addbg       = { "gui": "#5f875f", "cterm": "22" }
 let s:delfg       = { "gui": "#ff8b8b", "cterm": "210" }
 let s:delbg       = { "gui": "#f75f5f", "cterm": "124" }
 let s:changefg    = { "gui": "#d7d7ff", "cterm": "189" }
-let s:changebg    = { "gui": "#5f5f87", "cterm": "60" }
+let s:changebg    = { "gui": "#5f5f87", "cterm": "234" }
 
 let s:cyan        = { "gui": "#A1EFE4" }
 let s:br_green    = { "gui": "#9EC400" }
@@ -154,7 +154,7 @@ call s:h("Directory",     { "fg": s:aqua })
 call s:h("DiffAdd",       { "fg": s:addfg,      "bg": s:addbg })
 call s:h("DiffDelete",    { "fg": s:delfg,      "bg": s:delbg })
 call s:h("DiffChange",    { "fg": s:changefg,   "bg": s:changebg })
-call s:h("DiffText",      { "fg": s:black,      "bg": s:aqua })
+call s:h("DiffText",      { "fg": s:black,      "bg": s:orange })
 
 " fold
 call s:h("Folded",        { "fg": s:warmgrey,   "bg": s:darkblack })
